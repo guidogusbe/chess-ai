@@ -1,4 +1,4 @@
-```markdown
+```text
 # Deep Learning Chess AI
 
 ![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
@@ -8,7 +8,7 @@
 
 This repository contains the source code for a custom Chess Artificial Intelligence driven by a Convolutional Neural Network (CNN) implemented in PyTorch. The project integrates a graphical user interface (GUI) built with Pygame, allowing human players to test the model's capabilities in real-time. The neural network is designed to predict the optimal move probability distribution based on the current board state, having been trained on a dataset of high-level chess matches.
 
----
+
 
 ## Table of Contents
 1. [Architecture Overview](#architecture-overview)
@@ -20,7 +20,7 @@ This repository contains the source code for a custom Chess Artificial Intellige
 7. [Usage](#usage)
 8. [Roadmap and Future Enhancements](#roadmap-and-future-enhancements)
 
----
+
 
 ## Architecture Overview
 
@@ -29,13 +29,13 @@ The system is strictly divided into three primary components:
 * **Model Training & Inference:** A PyTorch-based CNN that ingests a 13-channel tensor representation of the chessboard and outputs a classification over all possible legal chess moves.
 * **User Interface:** A Pygame front-end that handles user input, strictly enforces chess rules via the `python-chess` library, and visually renders the board state and AI responses.
 
----
+
 
 ## Directory Structure
 
 The repository is structured to separate data, serialized models, and executable code.
 
-```text
+
 chess ai/
 ├── data/
 │   └── lichess_elite_2021-12.pgn    # Raw dataset of high-Elo chess matches in PGN format
